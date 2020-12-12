@@ -16,7 +16,7 @@ origins = [
     "https://localhost.tiangolo.com",
     "http://localhost", 
     "http://localhost:8080",
-    "https://cajero-app7.herokuapp.com" #TODO Actualizar el Heroku
+    "https://naval-apis.herokuapp.com" #TODO Actualizar el Heroku
 ]
 api.add_middleware(
     CORSMiddleware, allow_origins=origins,

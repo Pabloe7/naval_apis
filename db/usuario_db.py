@@ -27,7 +27,7 @@ def get_usuario(usuarioname: str):
         return None
     
 def update_usuario(usuario_in_db: usuarioInDB):
-    database_usuarios[usuario_in_db.usuarioname] = usuario_in_db
+    database_usuarios[usuario_in_db.nombre] = usuario_in_db
     return usuario_in_db
 
 
