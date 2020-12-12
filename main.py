@@ -30,12 +30,12 @@ async def auth_usuario(usuario_in: UserIn):
     usuario_in_db = get_usuario(usuario_in.nombre)
 
     if usuario_in_db == None:
-        return{"Autentificado": True,"Cuenta creada...En desarrollo"}
+        return{"Autentificado": True,"Mensaje": "Cuenta creada...En desarrollo"}
     
-    if usuario_in_db.password != usuario_in.password:
-        return  return{"Autentificado": False,"Cuenta creada...En desarrollo"}
+    else:
+        return {"Autentificado": False,"Mensaje": "Bienvenido...De nuevo"}
 
-    return  {"Autenticado": True}
+    
 
 
 '''
