@@ -33,7 +33,7 @@ async def auth_usuario(usuario_in: UserIn):
         return{"Autentificado": True,"Mensaje": "Cuenta creada...En desarrollo"}
     
     else:
-        return {"Autentificado": False,"Mensaje": "Bienvenido...De nuevo"}
+        return {"Autentificado": True,"Mensaje": "Bienvenido...De nuevo"}
 
     
 
